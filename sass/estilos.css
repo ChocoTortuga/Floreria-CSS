@@ -1,0 +1,254 @@
+.banner {
+  height: 400px;
+  background-color: #fe98a5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  background-image: url("../img/Banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner h1 {
+  color: Black;
+  font-family: 'Rochester', cursive;
+  font-size: 6rem;
+  vertical-align: middle;
+  margin: auto;
+}
+
+.navegacion {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #c23251;
+  border: 3px solid #c23251;
+}
+
+.navegacion li {
+  float: left;
+}
+
+.navegacion li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navegacion li a:hover {
+  background-color: white;
+  color: #c23251;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.sidebar {
+  padding: 0.6rem 1rem;
+  background-color: #ffd8ce;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  margin: 0.5rem;
+  width: 10%;
+}
+
+.sidebar img {
+  width: 80%;
+  padding-left: 20px;
+}
+
+.sidebar h4 {
+  text-align: center;
+}
+
+.sidebar .flor {
+  text-decoration: none;
+  color: black;
+}
+
+.blog {
+  padding: 0.2rem 1.5rem;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  text-align: center;
+  width: 72%;
+}
+
+.blog img {
+  width: 50%;
+}
+
+.blog p {
+  padding: 0 4rem;
+  text-align: justify;
+}
+
+.encuesta {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  padding: 0.6rem 1.5rem 1rem 1.5rem;
+  background-color: #c23251;
+  margin: 0.5rem;
+  height: 60%;
+  width: 8%;
+}
+
+.encuesta img {
+  border: 5px solid white;
+  width: 80%;
+  border-radius: 100px;
+  margin-left: 0.4rem;
+}
+
+.encuesta label, .encuesta h4 {
+  color: white;
+}
+
+.encuesta h4 {
+  text-align: center;
+}
+
+.galeria {
+  background-color: #c23251;
+  color: white;
+  text-align: center;
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 2rem;
+}
+
+.galeria img {
+  border: 3px solid white;
+  display: inline-block;
+  width: 10%;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: white;
+  color: #c23251;
+  text-align: center;
+  padding: 5px;
+  width: 100%;
+}
+
+footer .icono {
+  color: #c23251;
+  margin: 3px;
+}
+
+nav, aside, section, footer {
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+@media screen and (max-width: 1599px) {
+  .sidebar {
+    width: 100%;
+    text-align: center;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+  }
+  .sidebar img {
+    width: 20%;
+  }
+  .sidebar li {
+    list-style: none;
+    margin-right: 2.5rem;
+  }
+  .blog {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .encuesta {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 10%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .banner {
+    height: 300px;
+  }
+  .banner h1 {
+    font-size: 5rem;
+  }
+  .flex-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog {
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    padding: 0;
+    margin: 0;
+  }
+  .blog img {
+    width: 70%;
+  }
+  .encuesta {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+  }
+  .encuesta img {
+    width: 15%;
+  }
+  .galeria {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner {
+    height: 250px;
+  }
+  .banner h1 {
+    font-size: 3rem;
+  }
+  .navegacion li {
+    float: none;
+    width: 100%;
+  }
+  .blog img {
+    width: 70%;
+  }
+  .encuesta img {
+    width: 18%;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */
